@@ -1,26 +1,67 @@
-<footer class="bg-white p-4 py-8">
-    <div class="">
-        <div class="md:col-span-2">
-            <img src="<?php echo __ROOT__; ?>/public/img/logo.png" alt="logo de la empresa" class="w-100">
+<footer class="bg--white p-4 py-8">
+    <div class="mw--1440 row m-0">
+        <div class="col-lg-3 p-2">
+            <h2 class="text--md pfd-regular mb-4">Bienvenido a Hacienda San Martín</h2>
+            <p class="poppins-regular text--xs">Fundada en 1566 por Hernán Cortés como casa de descanso para una de sus hijas, posteriormente fue albergue del ejército independentista de Miguel Hidalgo. <br>
+                Años más tarde, fue refugio de piratas que robaban cargamentos en la ruta México - Toluca, para después tener una etapa productiva como hacienda de granos
+            </p>
         </div>
-        <div class="md:col-span-8 md:px-8 md:text-center">
-            <ul class="flex flex-col md:flex-row justify-between">
-                <li class="my-3 mx-3"><a href="<?php echo __ROOT__; ?>">Inicio</a></li>
-                <li class="my-3 mx-3"><a href="<?php echo __ROOT__; ?>nosotros">Acerca de nosotros</a></li>
-                <li class="my-3 mx-3"><a href="<?php echo __ROOT__; ?>servicios">Servicios</a></li>
-                <li class="my-3 mx-3"><a href="<?php echo __ROOT__; ?>multimedia">Multimedia y fotos</a></li>
-                <li class="my-3 mx-3"><a href="<?php echo __ROOT__; ?>#contacto">Contacto</a></li>
+        <div class="col-sm-6 col-md-4 col-lg-3 p-2">
+            <h2 class="text--md pfd-regular mb-4">Visítanos</h2>
+            <a class="d-flex a--black">
+                <i class="fas fa-map-marker-alt text--md"></i>
+                <p class="poppins-regular text--xs ml-2">
+                    Mexico - Toluca Km 44.5-Lote 11, Fracc. Hacienda San Martin, 52740 Ocoyoacac, Méx.
+                </p>
+            </a>
+            <a class="d-flex a--black">
+                <i class="fas fa-phone-alt text--md"></i>
+                <p class="poppins-regular text--xs ml-2">
+                    728 101 2085
+                </p>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 p-2">
+            <h2 class="text--md pfd-regular mb-4">Links</h2>
+            <ul class="list-unstyled poppins-regular text--xs">
+                <li class="mb-3">
+                    <a href="<?php echo __ROOT__; ?>" class="a--black">Home</a>
+                </li>
+                <li class="mb-3">
+                    <a href="<?php echo __ROOT__; ?>/menu" class="a--black">Menú</a>
+                </li>
+                <li class="mb-3">
+                    <a href="<?php echo __ROOT__; ?>/grupo-orraca" class="a--black">Grupo Orraca</a>
+                </li>
+                <li class="mb-3">
+                    <a href="<?php echo __ROOT__; ?>/galeria" class="a--black">Galería</a>
+                </li>
+                <li class="mb-3">
+                    <a href="<?php echo __ROOT__; ?>/contacto" class="a--black">
+                        Contacto
+                    </a>
+                </li>
             </ul>
         </div>
-        <div class="md:col-span-2">
-            <ul class="flex">
-                <li class="m-3"><a target="_blank" href="https://www.facebook.com/EnCargoOLK?mibextid=LQQJ4d"><i class="fa-brands fa-square-facebook fa-2xl"></i></i></a></li>
-                <li class="m-3"><a target="_blank" href="https://instagram.com/encargo_olkb?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
-                <li class="m-3"><a target="_blank" href="https://www.linkedin.com/in/encargo-olk-b65937249"><i class="fa-brands fa-linkedin fa-2xl"></i></a></li>
-            </ul>
+        <div class="col-sm-6 col-md-4 col-lg-3 p-2">
+            <div>
+                <h2 class="text--md pfd-regular mb-4">Reservación</h2>
+                <div>
+                    <a href="" class="btn btn--black text-uppercase px-4 py-2">Reserva ahora</a>
+                </div>
+            </div>
+            <div>
+                <h2 class="text--md pfd-regular mb-4 mt-4">Horario</h2>
+                <div class="d-flex">
+                    <i class="far fa-clock text--md"></i>
+                    <p class="poppins-regular text--xs ml-2">
+                        Lunes a Domingo de 8:00 a 18:00 hrs.
+                    </p>
+                </div>
+            </div>
         </div>
+
     </div>
-    <p class="text-grey_text text-center">© 2023. All Rights Reserved.</p>
 </footer>
 
 </body>
