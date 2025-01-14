@@ -9,9 +9,13 @@ define('__ROOT__', "http://localhost/hsm");
 
 
 Flight::route('/', function () {
-    Flight::render('index.php', array('title' => 'Home'));
+    Flight::render('index.php', array('title' => 'Home', 'isPosAbs' => true));
 });
 
+
+Flight::route('/menu', function () {
+    Flight::render('menu.php', array('title' => 'Menú'));
+});
 #404
 Flight::map('notFound', function () {
     // Display custom 404 page

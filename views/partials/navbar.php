@@ -1,4 +1,6 @@
-<?php $title = isset($title) ? $title : 'Tanko';
+<?php 
+    $title = isset($title) ? $title : 'Tanko';
+    $isPosAbs = isset($isPosAbs) ? $isPosAbs : false;
 ?>
 
 <div class="bg--black text-white py-2 px-3 d-none d-lg-block" id="topItem">
@@ -20,15 +22,15 @@
     </div>
 </div>
 
-<header class="d-none d-lg-block position-absolute w-100 py-3 px-4" style="z-index: 10">
+<header class="d-none d-lg-block w-100 py-3 px-4 <?php echo $isPosAbs ? 'position-absolute' : 'bg--black' ;?>" style="z-index: 10">
     <div class="mw--1440 d-flex justify-content-between align-items-center poppins-regular">
         <div>
-            <ul class="d-flex list-unstyled">
+            <ul class="d-flex list-unstyled m-0">
                 <li class="mx-3">
-                    <a href="" class="a--white">Home</a>
+                    <a href="<?php echo __ROOT__; ?>/" class="a--white">Home</a>
                 </li>
                 <li class="mx-3">
-                    <a href="" class="a--white">Menú</a>
+                    <a href="<?php echo __ROOT__ ; ?>/menu" class="a--white">Menú</a>
                 </li>
                 <li class="mx-3">
                     <a href="" class="a--white">Grupo Orraca</a>
@@ -39,7 +41,7 @@
             <img src="<?php echo __ROOT__; ?>/public/img/logo.png" alt="logo de la empresa" width="116.65" height="35.62">
         </div>
         <div>
-            <ul class="d-flex list-unstyled">
+            <ul class="d-flex list-unstyled m-0">
                 <li class="mx-3">
                     <a href="" class="a--white">Galería</a>
                 </li>
@@ -72,11 +74,7 @@
             <nav>
                 <ul class="d-flex flex-column text--md w-100 list--unstyled">
                     <li class="my-2"><a class="<?php echo $title == 'Home' ? 'a--dark-blue text--bold' : 'a--grey' ?>" href="<?php echo __ROOT__; ?>">Home</a></li>
-                    <li class="my-2"><a class="<?php echo $title == 'Servicios' ? 'a--dark-blue text--bold' : 'a--grey' ?>" href="<?php echo __ROOT__; ?>nosotros">Servicios</a></li>
-                    <li class="my-2"><a class="<?php echo $title == 'Seguros personales' ? 'a--dark-blue text--bold' : 'a--grey' ?>" href="<?php echo __ROOT__; ?>servicios">Seguros personales</a></li>
-                    <li class="my-2"><a class="<?php echo $title == 'Seguros empresariales' ? 'a--dark-blue text--bold' : 'a--grey' ?>" href="<?php echo __ROOT__; ?>#contacto">Seguros empresariales</a></li>
-                    <li class="my-2"><a class="<?php echo $title == 'Fianzas' ? 'a--dark-blue text--bold' : 'a--grey' ?>" href="<?php echo __ROOT__; ?>#contacto">Fianzas</a></li>
-                    <li class="my-2"><a class="<?php echo $title == '¿Quiénes somos?' ? 'a--dark-blue text--bold' : 'a--grey' ?>" href="<?php echo __ROOT__; ?>#contacto">¿Quiénes somos?</a></li>
+                    <li class="my-2"><a class="<?php echo $title == 'Menú' ? 'a--dark-blue text--bold' : 'a--grey' ?>" href="<?php echo __ROOT__; ?>/menu">Menú</a></li>
                 </ul>
             </nav>
         </div>
