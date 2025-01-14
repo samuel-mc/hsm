@@ -16,6 +16,11 @@ Flight::route('/', function () {
 Flight::route('/menu', function () {
     Flight::render('menu.php', array('title' => 'Menú'));
 });
+
+Flight::route('/galeria', function () {
+    Flight::render('galeria.php', array('title' => 'Galería'));
+});
+
 #404
 Flight::map('notFound', function () {
     // Display custom 404 page

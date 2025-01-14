@@ -43,7 +43,7 @@
         <div>
             <ul class="d-flex list-unstyled m-0">
                 <li class="mx-3">
-                    <a href="" class="a--white">Galería</a>
+                    <a href="<?php echo __ROOT__ ; ?>/galeria" class="a--white">Galería</a>
                 </li>
                 <li class="mx-3">
                     <a href="" class="a--white">Contacto</a>
@@ -62,26 +62,24 @@
         </button>
     </div>
 </header>
-<nav class="h--screen notShowed position-fixed z-10 bg-white w-100 py-4" id="mobileMenu" style="top: 0;">
-    <div class="d-flex flex-column justify-content-between px-4 py-8 h-100">
-        <div class="d-flex justify-content-between p-2">
-            <img src="<?php echo __ROOT__; ?>/public/img/logo.png" class="w-20">
+<nav class="h--screen notShowed position-fixed z-10 bg-white w-100" id="mobileMenu" style="top: 0;">
+    <div class="d-flex flex-column h-100">
+        <div class="d-flex justify-content-between p-2 bg--black p-3">
+            <img src="<?php echo __ROOT__; ?>/public/img/logo.png" width="116.65" height="35.62">
             <button class="btn btn-danger btn--square px-3" onclick="toggleShowMenu()">
                 <i class="fa-solid fa-x text--white"></i>
             </button>
         </div>
-        <div class="my-10">
+        <div class="my-10 px-4 py-5">
             <nav>
                 <ul class="d-flex flex-column text--md w-100 list--unstyled">
                     <li class="my-2"><a class="<?php echo $title == 'Home' ? 'a--dark-blue text--bold' : 'a--grey' ?>" href="<?php echo __ROOT__; ?>">Home</a></li>
                     <li class="my-2"><a class="<?php echo $title == 'Menú' ? 'a--dark-blue text--bold' : 'a--grey' ?>" href="<?php echo __ROOT__; ?>/menu">Menú</a></li>
+                    <li class="my-2"><a class="<?php echo $title == 'Grupo Orraca' ? 'a--dark-blue text--bold' : 'a--grey' ?>" href="">Grupo Orraca</a></li>
+                    <li class="my-2"><a class="<?php echo $title == 'Galería' ? 'a--dark-blue text--bold' : 'a--grey' ?>" href="<?php echo __ROOT__; ?>/galeria">Galería</a></li>
+                    <li class="my-2"><a class="<?php echo $title == 'Contacto' ? 'a--dark-blue text--bold' : 'a--grey' ?>" href="">Contacto</a></li>
                 </ul>
             </nav>
-        </div>
-        <div>
-            <a href="<?php echo __ROOT__; ?>/contacto" class="btn btn-dark btn--rounded btn--darkBlue py-2 px-4 w--fit h--fit text--bold">
-                Contacto
-            </a>
         </div>
     </div>
 </nav>
