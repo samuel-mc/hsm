@@ -424,7 +424,9 @@
     border-radius: 10px;
 }
 
-
+textarea {
+    resize: none !important;
+}
 
 @media (max-width: 1400px) {
     .grid--5cols {

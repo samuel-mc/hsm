@@ -46,7 +46,7 @@
                     <a href="<?php echo __ROOT__ ; ?>/galeria" class="a--white">Galería</a>
                 </li>
                 <li class="mx-3">
-                    <a href="" class="a--white">Contacto</a>
+                    <a href="<?php echo __ROOT__; ?>/contacto" class="a--white">Contacto</a>
                 </li>
             </ul>
         </div>
@@ -77,7 +77,7 @@
                     <li class="my-2"><a class="<?php echo $title == 'Menú' ? 'a--dark-blue text--bold' : 'a--grey' ?>" href="<?php echo __ROOT__; ?>/menu">Menú</a></li>
                     <li class="my-2"><a class="<?php echo $title == 'Grupo Orraca' ? 'a--dark-blue text--bold' : 'a--grey' ?>" href="">Grupo Orraca</a></li>
                     <li class="my-2"><a class="<?php echo $title == 'Galería' ? 'a--dark-blue text--bold' : 'a--grey' ?>" href="<?php echo __ROOT__; ?>/galeria">Galería</a></li>
-                    <li class="my-2"><a class="<?php echo $title == 'Contacto' ? 'a--dark-blue text--bold' : 'a--grey' ?>" href="">Contacto</a></li>
+                    <li class="my-2"><a class="<?php echo $title == 'Contacto' ? 'a--dark-blue text--bold' : 'a--grey' ?>" href="<?php echo __ROOT__; ?>/contacto">Contacto</a></li>
                 </ul>
             </nav>
         </div>

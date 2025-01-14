@@ -21,6 +21,10 @@ Flight::route('/galeria', function () {
     Flight::render('galeria.php', array('title' => 'Galería'));
 });
 
+Flight::route('/contacto', function () {
+    Flight::render('contacto.php', array('title' => 'Contacto'));
+});
+
 #404
 Flight::map('notFound', function () {
     // Display custom 404 page

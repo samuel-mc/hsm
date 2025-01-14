@@ -74,6 +74,40 @@ html {
     height: 100%;
 }
 
+.contacto__input {
+    width: 100%;
+    background-color: var(--light-black);
+    border: 1px solid white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    padding: 12px 24px;
+    margin: 12px 0;
+    color: white;
+}
+
+.contacto__input::placeholder {
+    color: rgba(255, 255, 255, 0.572);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+
+.contacto__input:focus {
+    outline: 1px solid white;
+}
+
+.contacto__form--right {
+    position: relative;
+}
+
+.contacto__form--right > div {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 @keyframes appear {
     0% {
         opacity: 0;
