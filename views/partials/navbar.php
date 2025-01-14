@@ -54,32 +54,37 @@
     </div>
 </header>
 
-<header class="bg--lightBlack p-2 d-lg-none w-100">
-    <div class="d-flex justify-content-between align-items-center w-100">
-        <img src="<?php echo __ROOT__; ?>/public/img/logo.png" width="116.65" height="35.62">
-        <button class="btn btn--mustard btn--square px-3 " onclick="toggleShowMenu()">
-            <i class="fa-solid fa-bars"></i>
-        </button>
-    </div>
-</header>
-<nav class="h--screen notShowed position-fixed z-10 bg-white w-100" id="mobileMenu" style="top: 0;">
-    <div class="d-flex flex-column h-100">
-        <div class="d-flex justify-content-between p-2 bg--black p-3">
-            <img src="<?php echo __ROOT__; ?>/public/img/logo.png" width="116.65" height="35.62">
-            <button class="btn btn-danger btn--square px-3" onclick="toggleShowMenu()">
-                <i class="fa-solid fa-x text--white"></i>
-            </button>
-        </div>
-        <div class="my-10 px-4 py-5">
-            <nav>
-                <ul class="d-flex flex-column text--md w-100 list--unstyled">
-                    <li class="my-2"><a class="<?php echo $title == 'Home' ? 'a--dark-blue text--bold' : 'a--grey' ?>" href="<?php echo __ROOT__; ?>">Home</a></li>
-                    <li class="my-2"><a class="<?php echo $title == 'Menú' ? 'a--dark-blue text--bold' : 'a--grey' ?>" href="<?php echo __ROOT__; ?>/menu">Menú</a></li>
-                    <li class="my-2"><a class="<?php echo $title == 'Grupo Orraca' ? 'a--dark-blue text--bold' : 'a--grey' ?>" href="">Grupo Orraca</a></li>
-                    <li class="my-2"><a class="<?php echo $title == 'Galería' ? 'a--dark-blue text--bold' : 'a--grey' ?>" href="<?php echo __ROOT__; ?>/galeria">Galería</a></li>
-                    <li class="my-2"><a class="<?php echo $title == 'Contacto' ? 'a--dark-blue text--bold' : 'a--grey' ?>" href="<?php echo __ROOT__; ?>/contacto">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
+
+<!-- Version mobile -->
+<nav class="navbar navbar-expand-lg navbar-dark bg--lightBlack" id="mobileMenu">
+  <a class="navbar-brand" href="<?php echo __ROOT__; ?>/">
+    <img src="<?php echo __ROOT__; ?>/public/img/logo.png" width="116.65" height="35.62">
+  </a>
+  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="open-icon">
+        <i class="fa-solid fa-bars"></i>
+    </span>
+    <span class="close-icon">
+        <i class="fa-solid fa-xmark"></i>
+    </span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="<?php echo __ROOT__; ?>/">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="<?php echo __ROOT__; ?>/menu">Menú</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="">Grupo Orraca</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="<?php echo __ROOT__; ?>/galeria">Galería</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="<?php echo __ROOT__; ?>/contacto">Contacto</a>
+        </li>
+    </ul>
+  </div>
 </nav>
