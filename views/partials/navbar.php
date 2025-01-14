@@ -56,7 +56,7 @@
 
 
 <!-- Version mobile -->
-<nav class="navbar navbar-expand-lg navbar-dark bg--lightBlack" id="mobileMenu">
+<nav class="d-lg-none navbar navbar-expand-lg navbar-dark bg--lightBlack" id="mobileMenu">
   <a class="navbar-brand" href="<?php echo __ROOT__; ?>/">
     <img src="<?php echo __ROOT__; ?>/public/img/logo.png" width="116.65" height="35.62">
   </a>
