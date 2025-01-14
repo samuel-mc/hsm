@@ -21,4 +21,4 @@ $title = isset($title) ? $title : 'Tanko';
     <title><?php echo $title ?></title>
 </head>
 
-<body class="bg-white position-relative">
+<body class="bg--lightBlack position-relative">

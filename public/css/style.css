@@ -33,6 +33,47 @@ html {
     transition: transform 0.6s ease-in-out;
 }
 
+#verticalSeparator {
+    margin: 4px auto;
+    background-color: #fff;
+    width: 2px;
+    height: 24px;
+}
+
+.servicio__itm {
+    position: relative;
+}
+
+.servicio__itm > div {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#reviewSplide .splide__arrow {
+    background-color: transparent;
+}
+
+#reviewSplide .splide__arrow svg {
+    fill: #fff;
+}
+
+.gracias__left {
+    position: relative;
+}
+
+.gracias__left > div {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 @keyframes appear {
     0% {
         opacity: 0;

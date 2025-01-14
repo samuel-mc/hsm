@@ -1,7 +1,7 @@
 <?php $title = isset($title) ? $title : 'Tanko';
 ?>
 
-<div class="bg--black text-white py-2 px-3" id="topItem">
+<div class="bg--black text-white py-2 px-3 d-none d-lg-block" id="topItem">
     <div class="mw--1440 d-flex flex-wrap">
         <div class="mr-3">
             <i class="fa-solid fa-location-dot me-2"></i>

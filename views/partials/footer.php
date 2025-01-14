@@ -1,7 +1,7 @@
 <footer class="bg-white p-4 py-8">
     <div class="">
         <div class="md:col-span-2">
-            <img src="<?php echo __ROOT__; ?>/public/img/logo.png" alt="logo de la empresa">
+            <img src="<?php echo __ROOT__; ?>/public/img/logo.png" alt="logo de la empresa" class="w-100">
         </div>
         <div class="md:col-span-8 md:px-8 md:text-center">
             <ul class="flex flex-col md:flex-row justify-between">

@@ -242,7 +242,20 @@
 }
 
 .btn--mustard:hover {
-    background-color: var(--light-blue) !important;
+    background-color: white !important;
+    color: var(--black) !important;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn--white {
+    background-color: white !important;
+    color: var(--black) !important;
+    transition: background-color 0.6s ease-in-out;
+}
+
+.btn--white:hover {
+    background-color: var(--mustard) !important;
+    color: white !important;
     transition: background-color 0.3s ease-in-out;
 }
 
@@ -312,6 +325,10 @@
 
 .mw--520 {
     max-width: 520px;
+}
+
+.mw--640 {
+    max-width: 640px;
 }
 
 .mw--920 {
